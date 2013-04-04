@@ -8,7 +8,7 @@ Depedency
 
 This project depends on the c++ Boost library program_options version 1.53.0: http://www.boost.org/
 
-You can probably your package manager to get the right package: `apt-cache search libboost-program-options`
+You can find the boost library using your package manager: `apt-cache search libboost-program-options`
 
 Compiling
 ---------
