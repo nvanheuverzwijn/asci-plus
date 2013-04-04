@@ -25,11 +25,13 @@ Help options:
 
 output:
 
-`Allowed options:
+<pre>
+Allowed options:
   --help                      : produce this help message
   -i [ --increment ] arg (=1) : the increment that will be added to each 
                               character of the passed string
-  --input-string arg          : a string that will be incremented`
+  --input-string arg          : a string that will be incremented
+</pre>
 
 Using it:
 `./asci+ -i 1 "test"`
