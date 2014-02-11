@@ -15,6 +15,7 @@ Compiling
 
 
 `g++ -Wall -fexceptions  -O2 -c main.cpp -o main.o`
+
 `g++ -o asci+ main.o -s -lboost_program_options`
 
 Usage
