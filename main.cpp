@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
 
     options_descriptor.add_options()
         (
-            "help",
+            "help,h",
             ": produce this help message"
         )
         (
