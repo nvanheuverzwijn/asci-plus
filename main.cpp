@@ -45,10 +45,8 @@ int main(int argc, char* argv[])
     if(arguments.count("help"))
     {
         cout << options_descriptor << "\n";
-        return 1;
     }
-
-    if(input_string.length() != 0)
+    else if(input_string.length() != 0)
     {
         for (std::string::iterator i = input_string.begin(); i != input_string.end(); i++)
         {
@@ -56,6 +54,9 @@ int main(int argc, char* argv[])
         }
         cout << "\n";
     }
-
+    else
+    {
+        cout << options_descriptor << "\n";
+    }
     return 0;
 }
