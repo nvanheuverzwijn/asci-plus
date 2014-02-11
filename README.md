@@ -14,8 +14,8 @@ Compiling
 ---------
 
 
-`g++ -Wall -fexceptions  -O2 -I/usr/local/boost_1_53_0/  -c main.cpp i-o main.o`
-`g++ -L/usr/local/boost_1_53_0/stage/lib/  -o asci+ main.o   -s  -lboost_program_options`
+`g++ -Wall -fexceptions  -O2 -c main.cpp -o main.o`
+`g++ -o asci+ main.o -s -lboost_program_options`
 
 Usage
 -----
