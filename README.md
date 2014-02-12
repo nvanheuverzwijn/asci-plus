@@ -12,30 +12,26 @@ You can find the boost library using your package manager: `apt-cache search lib
 
 Compiling
 ---------
-
-
-`g++ -Wall -fexceptions  -O2 -c main.cpp -o main.o`
-
-`g++ -o asci+ main.o -s -lboost_program_options`
+`make` command will take care of this for you.
 
 Usage
 -----
 
 Help options:
-`./asci+ --help`
+`bin/asci+ --help`
 
 output:
 
 <pre>
 Allowed options:
-  --help                      : produce this help message
+  -h [--help]                 : produce this help message
   -i [ --increment ] arg (=1) : the increment that will be added to each 
                               character of the passed string
   --input-string arg          : a string that will be incremented
 </pre>
 
 Using it:
-`./asci+ -i 1 "test"`
+`bin/asci+ -i 1 "test"`
 
 output:
 
