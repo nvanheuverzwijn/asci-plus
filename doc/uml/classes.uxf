@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>312</x>
+      <y>66</y>
+      <w>90</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Combulator
+--
+#victim:string = ""
+#rules:array&lt;Rule&gt; = []
+--
++getVictim()
++setVictim(string)
++addRule(Rule)
++removeRule(Rule)
+--
++apply()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>264</x>
+      <y>210</y>
+      <w>174</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;INTERFACE&gt;&gt;
+Rule
+--
+#CharacterSet:character_set
+--
++getCharacterSet()
++setCharacterSet(CharacterSet)
+--
++apply(string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>138</y>
+      <w>42</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+  *</panel_attributes>
+    <additional_attributes>24;18;24;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>444</x>
+      <y>414</y>
+      <w>108</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Incrementor
+--
+#int:increment = 0
+--
++getIncrement()
++setIncrement(int)
+--
++apply(string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>414</x>
+      <y>312</y>
+      <w>96</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>18;18;84;102</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>252</x>
+      <y>414</y>
+      <w>186</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>CharacterBlacklist
+--
+#array&lt;char&gt;:blacklisted_characters = []
+#bool:backward = false
+--
++addBlacklistedCharacter(char)
++removeBlacklistedCharacter(char)
++setBlacklistedCharacters(array&lt;char&gt;)
++getBlacklistedCharacters()
++getBackward()
++setBackward(bool)
+--
++apply(string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>330</x>
+      <y>312</y>
+      <w>30</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>18;18;18;102</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>126</x>
+      <y>414</y>
+      <w>120</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>Multiplicator
+--
+#uint:multiplier = 1
+--
++getMultiplier()
++setMultiplier(uint)
+--
++apply(string)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>168</x>
+      <y>312</y>
+      <w>114</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>102;18;18;102</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>72</x>
+      <y>240</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ENUMERATION&gt;&gt;
+CharacterSet
+--
+ASCII
+UTF-8</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>258</y>
+      <w>96</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>84;18;18;18</additional_attributes>
+  </element>
+</diagram>
