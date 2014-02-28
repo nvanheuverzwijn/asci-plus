@@ -67,7 +67,7 @@
       <w>180</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>LogicException
+    <panel_attributes>CannotComplyException
 --</panel_attributes>
     <additional_attributes/>
   </element>
