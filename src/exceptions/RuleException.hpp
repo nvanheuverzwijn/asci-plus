@@ -6,10 +6,9 @@
 
 class RuleException: public CombulatorException
 {
-
-    RuleException(std::string message);
-    virtual ~RuleException() throw();
-
+    public:
+        RuleException(std::string message);
+        virtual ~RuleException() throw();
 };
 
 #endif
