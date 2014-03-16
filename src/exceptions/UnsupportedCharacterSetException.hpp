@@ -10,7 +10,7 @@ class UnsupportedCharacterSetException: public RuleException
     public:
         UnsupportedCharacterSetException(CharacterSetEnum character_set, std::string message);
         CharacterSetEnum getCharacterSet();
-        std::string getcharacterSetAsString();
+        std::string getCharacterSetAsString();
     protected:
         CharacterSetEnum character_set;
         void setCharacterSet(CharacterSetEnum value);

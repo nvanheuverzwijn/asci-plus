@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-Wall
+CFLAGS=-Wall -std=c++11
 LDFLAGS=-lboost_program_options
 SOURCES_DIRECTORY=src
 SOURCES=$(wildcard $(SOURCES_DIRECTORY)/*.cpp) $(wildcard $(SOURCES_DIRECTORY)/**/*.cpp)

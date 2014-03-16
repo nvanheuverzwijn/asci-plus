@@ -30,7 +30,7 @@
       <w>174</w>
       <h>120</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;INTERFACE&gt;&gt;
+    <panel_attributes>&lt;&lt;ABSTRACT&gt;&gt;
 Rule
 --
 #CharacterSet:character_set
@@ -38,7 +38,8 @@ Rule
 +getCharacterSet()
 +setCharacterSet(CharacterSet)
 --
-+apply(string)</panel_attributes>
++apply(string)
+#doApply(string)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -68,7 +69,7 @@ Rule
 +getIncrement()
 +setIncrement(int)
 --
-+apply(string)</panel_attributes>
+#doApply(string)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -102,7 +103,7 @@ Rule
 +getBackward()
 +setBackward(bool)
 --
-+apply(string)</panel_attributes>
+#doApply(string)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -126,12 +127,12 @@ Rule
     </coordinates>
     <panel_attributes>Multiplicator
 --
-#uint:multiplier = 1
+#int:multiplier = 1
 --
 +getMultiplier()
-+setMultiplier(uint)
++setMultiplier(int)
 --
-+apply(string)</panel_attributes>
+#doApply(string)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>

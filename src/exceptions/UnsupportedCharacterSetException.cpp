@@ -15,7 +15,7 @@ CharacterSetEnum UnsupportedCharacterSetException::getCharacterSet()
 {
     return this->character_set;
 }
-std::string UnsupportedCharacterSetException::getcharacterSetAsString()
+std::string UnsupportedCharacterSetException::getCharacterSetAsString()
 {
-    return CharacterSetNames[this->getCharacterSet()];
+    return CharacterSetNames[(int)this->getCharacterSet()];
 }
