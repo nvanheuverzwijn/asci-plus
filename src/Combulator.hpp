@@ -15,7 +15,7 @@ class Combulator
         std::string getVictim();
         void setVictim(std::string value);
 
-        std::list<Rule*> getRules();
+        std::list<Rule*>& getRules();
         void addRule(Rule* rule);
         void removeRule(Rule& rule);
         std::string apply();

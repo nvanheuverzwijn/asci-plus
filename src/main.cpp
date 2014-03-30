@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <boost/program_options.hpp>
+#include "Combulator.hpp"
+#include "rules/Incrementor.hpp"
 
 using namespace std;
 
@@ -48,11 +50,10 @@ int main(int argc, char* argv[])
     }
     else if(input_string.length() != 0)
     {
-        for (std::string::iterator i = input_string.begin(); i != input_string.end(); i++)
-        {
-            cout << ((char)(*i + increment));
-        }
-        cout << "\n";
+        Combulator* c = new Combulator(input_string);
+        Incrementor* incrementor = new Incrementor(increment);
+        c->addRule(incrementor);
+        cout << c->apply();
     }
     else
     {

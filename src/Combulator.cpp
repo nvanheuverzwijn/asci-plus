@@ -18,7 +18,7 @@ Combulator::~Combulator()
     this->getRules().clear();
 }
 
-std::list<Rule*> Combulator::getRules()
+std::list<Rule*>& Combulator::getRules()
 {
     return this->rules;
 }
